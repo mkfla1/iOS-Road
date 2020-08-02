@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC243ED624C8CD0D00829DE4 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC243ED524C8CD0D00829DE4 /* AddItemViewController.swift */; };
+		DC243ED624C8CD0D00829DE4 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC243ED524C8CD0D00829DE4 /* ItemDetailViewController.swift */; };
 		DC49734524C7685100339511 /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC49734424C7685100339511 /* ChecklistItem.swift */; };
 		DC50BE0A24C6204E0065757C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC50BE0924C6204E0065757C /* AppDelegate.swift */; };
 		DC50BE0C24C6204E0065757C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC50BE0B24C6204E0065757C /* SceneDelegate.swift */; };
@@ -15,10 +15,13 @@
 		DC50BE1124C6204E0065757C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC50BE0F24C6204E0065757C /* Main.storyboard */; };
 		DC50BE1324C620500065757C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC50BE1224C620500065757C /* Assets.xcassets */; };
 		DC50BE1624C620500065757C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC50BE1424C620500065757C /* LaunchScreen.storyboard */; };
+		DCF0EF9524D6C56400818A3E /* AllListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF0EF9424D6C56400818A3E /* AllListsViewController.swift */; };
+		DCF0EF9A24D6CC4900818A3E /* Checklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF0EF9924D6CC4900818A3E /* Checklist.swift */; };
+		DCF0EF9D24D6D76500818A3E /* ListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF0EF9C24D6D76500818A3E /* ListDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DC243ED524C8CD0D00829DE4 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
+		DC243ED524C8CD0D00829DE4 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
 		DC49734424C7685100339511 /* ChecklistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistItem.swift; sourceTree = "<group>"; };
 		DC50BE0624C6204D0065757C /* Checklists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checklists.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC50BE0924C6204E0065757C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +31,9 @@
 		DC50BE1224C620500065757C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC50BE1524C620500065757C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC50BE1724C620500065757C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCF0EF9424D6C56400818A3E /* AllListsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllListsViewController.swift; sourceTree = "<group>"; };
+		DCF0EF9924D6CC4900818A3E /* Checklist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checklist.swift; sourceTree = "<group>"; };
+		DCF0EF9C24D6D76500818A3E /* ListDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +66,36 @@
 		DC50BE0824C6204E0065757C /* Checklists */ = {
 			isa = PBXGroup;
 			children = (
+				DCF0EF9B24D6D72700818A3E /* View Controllers */,
+				DCF0EF9624D6CBEB00818A3E /* Model */,
 				DC50BE0924C6204E0065757C /* AppDelegate.swift */,
 				DC50BE0B24C6204E0065757C /* SceneDelegate.swift */,
-				DC50BE0D24C6204E0065757C /* ChecklistViewController.swift */,
 				DC50BE0F24C6204E0065757C /* Main.storyboard */,
 				DC50BE1224C620500065757C /* Assets.xcassets */,
 				DC50BE1424C620500065757C /* LaunchScreen.storyboard */,
 				DC50BE1724C620500065757C /* Info.plist */,
-				DC49734424C7685100339511 /* ChecklistItem.swift */,
-				DC243ED524C8CD0D00829DE4 /* AddItemViewController.swift */,
 			);
 			path = Checklists;
+			sourceTree = "<group>";
+		};
+		DCF0EF9624D6CBEB00818A3E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DC49734424C7685100339511 /* ChecklistItem.swift */,
+				DCF0EF9924D6CC4900818A3E /* Checklist.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DCF0EF9B24D6D72700818A3E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DC50BE0D24C6204E0065757C /* ChecklistViewController.swift */,
+				DC243ED524C8CD0D00829DE4 /* ItemDetailViewController.swift */,
+				DCF0EF9424D6C56400818A3E /* AllListsViewController.swift */,
+				DCF0EF9C24D6D76500818A3E /* ListDetailViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,11 +169,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC243ED624C8CD0D00829DE4 /* AddItemViewController.swift in Sources */,
+				DC243ED624C8CD0D00829DE4 /* ItemDetailViewController.swift in Sources */,
 				DC50BE0E24C6204E0065757C /* ChecklistViewController.swift in Sources */,
+				DCF0EF9524D6C56400818A3E /* AllListsViewController.swift in Sources */,
 				DC50BE0A24C6204E0065757C /* AppDelegate.swift in Sources */,
 				DC50BE0C24C6204E0065757C /* SceneDelegate.swift in Sources */,
 				DC49734524C7685100339511 /* ChecklistItem.swift in Sources */,
+				DCF0EF9A24D6CC4900818A3E /* Checklist.swift in Sources */,
+				DCF0EF9D24D6D76500818A3E /* ListDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
