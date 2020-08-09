@@ -44,8 +44,18 @@ extension DataModel {
     do {
       let data = try Data(contentsOf: dataFilePath)
       lists = try decoder.decode([Checklist].self, from: data)
+      sortChecklists()
     } catch {
       print("Error decoding list array: \(error.localizedDescription)")
+    }
+  }
+}
+
+// MARK: - Sort Checklist
+extension DataModel {
+  func sortChecklists() {
+    lists.sort { (list1, list2) -> Bool in
+      return list1.name.localizedCompare(list2.name) == .orderedAscending
     }
   }
 }
@@ -78,5 +88,16 @@ extension DataModel {
     indexOfSelectedChecklist = 0
     userDefaults.set(false, forKey: "FirstTime")
     userDefaults.synchronize()
+  }
+}
+
+// MARK: - Checklist Item Utilities
+extension DataModel {
+  class func nextChecklistItemID() -> Int {
+    let userDefaults = UserDefaults.standard
+    let itemID = userDefaults.integer(forKey: "ChecklistItemID")
+    userDefaults.set(itemID + 1, forKey: "ChecklistItemID")
+    userDefaults.synchronize()
+    return itemID
   }
 }

@@ -61,8 +61,7 @@ extension ChecklistViewController {
 extension ChecklistViewController {
   private func configureCheckmark(for cell: UITableViewCell, with item: ChecklistItem) {
     let label = cell.viewWithTag(1001) as! UILabel
-    
-    label.text = item.checked ? "🍗" : ""
+    label.text = item.checked ? "√" : " "
   }
   
   private func configureText(for cell: UITableViewCell, with item: ChecklistItem) {

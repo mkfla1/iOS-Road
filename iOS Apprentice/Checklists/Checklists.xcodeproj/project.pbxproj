@@ -14,7 +14,7 @@
 		DC50BE0E24C6204E0065757C /* ChecklistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC50BE0D24C6204E0065757C /* ChecklistViewController.swift */; };
 		DC50BE1124C6204E0065757C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC50BE0F24C6204E0065757C /* Main.storyboard */; };
 		DC50BE1324C620500065757C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC50BE1224C620500065757C /* Assets.xcassets */; };
-		DC50BE1624C620500065757C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC50BE1424C620500065757C /* LaunchScreen.storyboard */; };
+		DC84DDE324DAB5CB00323C1D /* IconPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC84DDE224DAB5CB00323C1D /* IconPickerViewController.swift */; };
 		DCB3C32924D72BF6000C9409 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB3C32824D72BF6000C9409 /* DataModel.swift */; };
 		DCF0EF9524D6C56400818A3E /* AllListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF0EF9424D6C56400818A3E /* AllListsViewController.swift */; };
 		DCF0EF9A24D6CC4900818A3E /* Checklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF0EF9924D6CC4900818A3E /* Checklist.swift */; };
@@ -30,8 +30,8 @@
 		DC50BE0D24C6204E0065757C /* ChecklistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistViewController.swift; sourceTree = "<group>"; };
 		DC50BE1024C6204E0065757C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC50BE1224C620500065757C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DC50BE1524C620500065757C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC50BE1724C620500065757C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC84DDE224DAB5CB00323C1D /* IconPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconPickerViewController.swift; sourceTree = "<group>"; };
 		DCB3C32824D72BF6000C9409 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		DCF0EF9424D6C56400818A3E /* AllListsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllListsViewController.swift; sourceTree = "<group>"; };
 		DCF0EF9924D6CC4900818A3E /* Checklist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checklist.swift; sourceTree = "<group>"; };
@@ -82,7 +82,6 @@
 			isa = PBXGroup;
 			children = (
 				DC50BE1224C620500065757C /* Assets.xcassets */,
-				DC50BE1424C620500065757C /* LaunchScreen.storyboard */,
 				DC50BE0F24C6204E0065757C /* Main.storyboard */,
 			);
 			path = Resources;
@@ -105,6 +104,7 @@
 				DC243ED524C8CD0D00829DE4 /* ItemDetailViewController.swift */,
 				DCF0EF9424D6C56400818A3E /* AllListsViewController.swift */,
 				DCF0EF9C24D6D76500818A3E /* ListDetailViewController.swift */,
+				DC84DDE224DAB5CB00323C1D /* IconPickerViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -167,7 +167,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC50BE1624C620500065757C /* LaunchScreen.storyboard in Resources */,
 				DC50BE1324C620500065757C /* Assets.xcassets in Resources */,
 				DC50BE1124C6204E0065757C /* Main.storyboard in Resources */,
 			);
@@ -183,6 +182,7 @@
 				DC243ED624C8CD0D00829DE4 /* ItemDetailViewController.swift in Sources */,
 				DC50BE0E24C6204E0065757C /* ChecklistViewController.swift in Sources */,
 				DCF0EF9524D6C56400818A3E /* AllListsViewController.swift in Sources */,
+				DC84DDE324DAB5CB00323C1D /* IconPickerViewController.swift in Sources */,
 				DC50BE0A24C6204E0065757C /* AppDelegate.swift in Sources */,
 				DC50BE0C24C6204E0065757C /* SceneDelegate.swift in Sources */,
 				DC49734524C7685100339511 /* ChecklistItem.swift in Sources */,
@@ -201,14 +201,6 @@
 				DC50BE1024C6204E0065757C /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		DC50BE1424C620500065757C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DC50BE1524C620500065757C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
